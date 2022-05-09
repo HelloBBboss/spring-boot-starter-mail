@@ -1,0 +1,16 @@
+spring:
+  mail:
+    protocol: smtps
+    host: smtp.163.com
+    username: xxxx@163.com
+    password: xxxxxxxx
+    port: 465
+    default-encoding: UTF-8
+    properties:
+      main:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
